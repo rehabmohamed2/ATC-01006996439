@@ -1,0 +1,196 @@
+.event-details {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.event-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.event-meta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: #666;
+}
+
+.category {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.date {
+  color: #666;
+  font-weight: 500;
+}
+
+.event-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.event-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sold-out-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #f44336;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.event-info {
+  padding: 2rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.description h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.description p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item p {
+  color: #666;
+}
+
+.booking-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.book-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.book-button:hover {
+  background-color: #388e3c;
+}
+
+.book-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.booked-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.admin-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.edit-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.edit-button:hover {
+  background-color: #1976d2;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #f44336;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .event-content {
+    grid-template-columns: 1fr;
+  }
+
+  .event-image {
+    height: 300px;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .event-header h1 {
+    font-size: 2rem;
+  }
+} 
