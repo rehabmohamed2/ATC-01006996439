@@ -8,7 +8,12 @@ const eventBookingRoutes = require('./routes/eventBooking');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://events-booking-system-ynv7.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
+
 app.use(express.json());
 
 connect().catch(console.error);
