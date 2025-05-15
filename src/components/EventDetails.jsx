@@ -133,7 +133,7 @@ const EventDetails = () => {
       <div className="event-content">
         <div className="event-image">
           <img 
-            src={`http://localhost:5000/api/events/${id}/image`} 
+            src={`${API_ENDPOINTS.EVENTS.LIST}/${id}/image`} 
             alt={t('EVENT_IMAGE_ALT')} 
           />
         </div>

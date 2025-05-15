@@ -14,6 +14,7 @@ A full-stack event booking system built with React, Node.js, Express, and MongoD
 - Tags and categories for events
 - Event image upload functionality
 - Pagination or lazy loading
+- Backend Deployment on Railway
 
 ## Prerequisites
 
@@ -87,3 +88,18 @@ event-booking-system/
 ```
 Admin account: "admin2@test.com" password: "Test@123"
 User account: "rehab@gmail.com" passowrd: "Test@123"
+
+
+## Backend Deployment
+
+The backend API is deployed on [Railway](https://events-booking-system-production.up.railway.app/api/).
+
+In production, the base URL for the API is:
+
+const API_BASE_URL = 'https://events-booking-system-production.up.railway.app/api'
+
+To run the app locally, use:
+
+const API_BASE_URL = 'http://localhost:5000/api';
+
+API_BASE_URL exist in src/config/api.js
