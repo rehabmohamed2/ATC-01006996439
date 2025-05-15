@@ -1,5 +1,5 @@
 // const API_BASE_URL = 'http://localhost:5000/api';
-const API_BASE_URL = 'https://events-booking-system-production.up.railway.app/api'
+const API_BASE_URL = 'https://atc-01006996439-production.up.railway.app/api'
 export const API_ENDPOINTS = {
   AUTH: {
     LOGIN: `${API_BASE_URL}/auth/login`,
