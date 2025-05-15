@@ -89,14 +89,13 @@ event-booking-system/
 Admin account: "admin2@test.com" password: "Test@123"
 User account: "rehab@gmail.com" passowrd: "Test@123"
 
-
 ## Backend Deployment
 
-The backend API is deployed on [Railway](https://events-booking-system-production.up.railway.app/api/).
+The backend API is deployed on [Railway](https://atc-01006996439-production.up.railway.app/api/).
 
 In production, the base URL for the API is:
 
-const API_BASE_URL = 'https://events-booking-system-production.up.railway.app/api'
+const API_BASE_URL = 'https://atc-01006996439-production.up.railway.app/api'
 
 To run the app locally, use:
 
